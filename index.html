@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--jq query script-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!--bootsrap css and js-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <!-- custom js and css-->
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/app.js"></script>
+    
+    <title>Document</title>
+</head>
+<body>
+<div class="weather-positioin">
+    <hr>
+    
+    <div class="jumbotron">
+            <h1 class="display-3">Weather APP</h1>
+            <p class="lead">Get an accurate weather forecast that helps you plan your day.</p>
+            <hr class="my-4">
+            <nav class="navbar navbar-light bg-light">
+                    <form action="" class="form-inline" id="weather-form" name="weather-form">
+                      <input class="form-control mr-sm-2" type="text" placeholder="City" name="name" aria-label="City" id="weather-form">
+                      <input class="form-control mr-sm-2" type="text" placeholder="Country" name="country" aria-label="Country" id="weather-form">
+                      <button class="btn btn-outline-success my-2 my-sm-0" onClick="dataWeather()" type="button">Search</button>
+                    </form>
+            </nav>
+            <hr>
+
+            <div class="card-group">
+                    <div class="card">
+                      <img src="https://images.unsplash.com/photo-1500320821405-8fc1732209ca" class="card-img-top" alt="...">
+                      <div class="card-body">
+                            <tr>
+                                <th scope="col"></th>
+                                <h5 class="card-title">High</h5>
+                                <td><p id="WeatherHigh"></p></td>
+                            </tr>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img src="https://images.unsplash.com/photo-1485018713630-7b06241480a0" class="card-img-top" alt="...">
+                      <div class="card-body">
+                            <tr>
+                                <th scope="col"></th>
+                                <h5 class="card-title">Low</h5>
+                                <td><p id="WeatherLow"></p></td>
+                            </tr>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img src="https://images.unsplash.com/photo-1509803874385-db7c23652552" class="card-img-top" alt="...">
+                      <div class="card-body">
+                            <tr>
+                                <th scope="col"></th>
+                                <h5 class="card-title">Forecast</h5>
+                                <td><p id="WeatherForecast"></p></td>
+                            </tr>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      </div>
+                    </div>
+                    <div class="card">
+                            <img src="https://images.unsplash.com/photo-1529243235045-77c9f367a33c" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <tr>
+                                    <th scope="col"></th>
+                                    <h5 class="card-title">Humidity</h5>
+                                    <td><p id="WeatherHumidity"></p></td>
+                                </tr>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                    </div>
+                  </div>
+    </div>
+
+
+
+
+
+
+    <hr>
+</div>  
+</body>
+</html>
